@@ -7,7 +7,7 @@ int main(){
   char * p_to_k = &k; //Gives an incompatiable warning
 
   //prints k in hexadecimal
-  printf("Value of unsigned int: %d\n", k);
+  printf("Value of unsigned int: %u\n", k);
   printf("Hex value of unsigned int: %x\n\n", k);
 
   //printing eaching byte of int
@@ -23,7 +23,7 @@ int main(){
     p_to_k ++;
   }
 
-  printf("\nValue after incrementing by 1: %d\n", k);
+  printf("\nValue after incrementing by 1: %u\n", k);
   printf("Hex Value after incrementing by 1: %x\n", k);
 
   p_to_k = &k;
@@ -33,7 +33,7 @@ int main(){
     p_to_k ++;
   }
 
-  printf("\nValue after incrementing by 16: %d\n", k);
+  printf("\nValue after incrementing by 16: %u\n", k);
   printf("Hex Value after incrementing by 16: %x\n\n", k);
  
   
