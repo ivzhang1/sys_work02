@@ -21,20 +21,21 @@ int main(){
   for(int j = 0; j < sizeof(k); j++){
     *p_to_k += 1;
     p_to_k ++;
+    printf("\nValue after incrementing by 1: %u\n", k); // Binary: 10000100001000100101011100000001
+    printf("Hex Value after incrementing by 1: %x\n", k);
+    
   }
 
-  printf("\nValue after incrementing by 1: %u\n", k); // Binary: 10000100001000100101011100000001
-  printf("Hex Value after incrementing by 1: %x\n", k);
-
+  printf("\n\n\n");
   p_to_k = &k;
-  //increment each byte by one
+  //increment each byte by 16
   for(int j = 0; j < sizeof(k); j++){
     *p_to_k += 16;
     p_to_k ++;
+    printf("\nValue after incrementing by 16: %u\n", k); // Binary: 10000100001000100101011100000001
+    printf("Hex Value after incrementing by 16: %x\n", k);
   }
 
-  printf("\nValue after incrementing by 16: %u\n", k); // Binary: 10010100001100100110011100010001
-  printf("Hex Value after incrementing by 16: %x\n\n", k);
  
   
   
